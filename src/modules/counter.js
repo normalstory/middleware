@@ -10,12 +10,12 @@ export const decrement = createAction(DECREMENT);
 //스토어에 있는 리덕스 청크 활용 코드  : 함수를 디스패치하는 것 , 이 코드 작성 후  'app에 ~Async를 붙여준다!!!'
 export const incrementAsync = () => dispatch => {
     setTimeout(
-        () => { dispatch(increment())}, 1000
+        () => { dispatch(increment())}, 4000
     )
 }
 export const decrementAsync = () => dispatch => {
     setTimeout(
-        () => { dispatch(decrement())}, 1000
+        () => { dispatch(decrement())}, 4000
     )
 }
 
